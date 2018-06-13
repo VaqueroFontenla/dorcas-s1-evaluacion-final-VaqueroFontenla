@@ -1,0 +1,77 @@
+/* Colors *//* Fonts */body {
+  padding: 0;
+  margin: 0;
+}
+
+.sectionOne {
+  height: 100px;
+  background-color: purple;
+}
+
+.buttonHome {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  position: fixed;
+  background-color: #0271bc;
+}
+
+.button {
+  width: 45px;
+  height: 45px;
+  border-radius: 22.5px;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.textHero {
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.titulo {
+  width: 290px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  margin-bottom: 45px;
+}
+
+h1 {
+  font: bold 42px RobotoSlab;
+  line-height: 55px;
+  color: #fff;
+}
+
+h3 {
+  font: 16px Roboto;
+  color: #fff;
+}
+
+/*# sourceMappingURL=main.css.map */

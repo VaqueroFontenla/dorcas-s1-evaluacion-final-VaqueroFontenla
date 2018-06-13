@@ -26,6 +26,12 @@
   line-height: 45px;
   font-family: $fontFamilyText;
   font-weight: $fontWeightButton;
+  transition: background-color ease 2s;
+  &:hover {
+     background-color: $colorButtomGo;
+     color: $colorLight;
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+ }
   @media all and (min-width:768px) {
   width: 91px;
   }
@@ -41,13 +47,30 @@
   line-height: 2.25;
   font-family: $fontFamilyText;
   font-weight: $fontWeightButton;
+  transition: background-color ease 2s;
+  &:hover {
+     background-color: $colorLight;
+     color: $colorButtomGo;
+     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+ }
   @media all and (min-width:768px) {
   width: 210px;
   }
 }
  .withShadow {
    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-   transform: translateY(-50%);
+   transform: translatey(-50%);
    z-index: 5;
+   animation-name: intro;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease;
 
- }
+ @keyframes intro {
+  from {
+    transform: rotate(-0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+}

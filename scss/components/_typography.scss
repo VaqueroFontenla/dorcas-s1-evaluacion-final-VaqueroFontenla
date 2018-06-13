@@ -6,7 +6,10 @@ h1{
   @media all and (min-width:768px) {
     line-height: 1.33;
     font-size: $font-size-xxxx-large;
-
+  }
+  @media all and (min-width:1280px) {
+    line-height: 1.32;
+    font-size: $font-size-xxxxx-large;
   }
 }
 

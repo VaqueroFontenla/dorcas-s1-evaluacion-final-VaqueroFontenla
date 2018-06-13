@@ -116,6 +116,15 @@
   line-height: 45px;
   font-family: "Roboto";
   font-weight: 500;
+  -webkit-transition: background-color ease 2s;
+  transition: background-color ease 2s;
+}
+
+.buttonGo:hover {
+  background-color: #f26002;
+  color: #fff;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .moreReasonsButton {
@@ -128,14 +137,29 @@
   line-height: 2.25;
   font-family: "Roboto";
   font-weight: 500;
+  -webkit-transition: background-color ease 2s;
+  transition: background-color ease 2s;
+}
+
+.moreReasonsButton:hover {
+  background-color: #fff;
+  color: #f26002;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .withShadow {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translatey(-50%);
+  transform: translatey(-50%);
   z-index: 5;
+  -webkit-animation-name: intro;
+  animation-name: intro;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 
 .hero {
@@ -176,6 +200,8 @@
 }
 
 .subtitulo {
+  width: 290px;
+  height: 21px;
   margin-bottom: 45px;
   color: #fff;
   font-size: 16px;
@@ -256,7 +282,9 @@ p {
   }
 
   .subtitulo {
-    font-size: 18px;
+    width: 360px;
+    height: 32px;
+    font-size: 24px;
   }
 
   h1 {
@@ -270,6 +298,54 @@ p {
 
   p {
     font-size: 20px;
+  }
+}
+
+@media all and (min-width: 768px) and (min-width: 1280px) {
+  .subtitulo {
+    width: 730px;
+  }
+}
+
+@media all and (min-width: 1280px) {
+  .sectionOne {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .titulo {
+    width: 730px;
+    height: 264px;
+  }
+
+  h1 {
+    line-height: 1.32;
+    font-size: 100px;
+  }
+}
+
+@-webkit-keyframes intro {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes intro {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
 

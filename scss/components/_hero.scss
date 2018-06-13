@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.titulo{
+.titulo {
   width: 290px;
   height: 110px;
   text-align: center;
@@ -26,14 +26,24 @@
     width: 690px;
     height: 212px;
   }
+  @media all and (min-width:1280px) {
+    width: 730px;
+    height: 264px;
+  }
 }
 
 .subtitulo{
+  width: 290px;
+  height: 21px;
   margin-bottom: 45px;
   color: $colorTitle;
   font-size: $font-size-regular;
   @media all and (min-width:768px) {
-  font-size: $font-size-large;
+    width: 360px;
+    height: 32px;
+    font-size: $font-size-xx-large;
+    @media all and (min-width:1280px) {
+      width: 730px;
+    }
   }
-
 }

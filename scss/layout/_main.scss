@@ -4,6 +4,9 @@
  justify-content: flex-start;
  padding: 30px 15px 45px 15px;
  background-color: $colorLight;
+ @media all and (min-width:1280px) {
+    justify-content: center;
+ }
 }
 
 .rectangle{

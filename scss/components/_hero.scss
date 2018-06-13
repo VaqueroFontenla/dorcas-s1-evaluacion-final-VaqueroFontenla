@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .textHero {
@@ -18,11 +19,21 @@
 
 .titulo{
   width: 290px;
+  height: 110px;
   text-align: center;
   margin-bottom: 10px;
+  @media all and (min-width:768px) {
+    width: 690px;
+    height: 212px;
+  }
 }
 
 .subtitulo{
   margin-bottom: 45px;
   color: $colorTitle;
+  font-size: $font-size-regular;
+  @media all and (min-width:768px) {
+  font-size: $font-size-large;
+  }
+
 }

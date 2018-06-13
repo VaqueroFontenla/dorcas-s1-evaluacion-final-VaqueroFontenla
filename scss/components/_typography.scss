@@ -3,6 +3,11 @@ h1{
   font-size: $font-size-xxx-large;
   color: $colorTitle;
   line-height: 55px;
+  @media all and (min-width:768px) {
+    line-height: 1.33;
+    font-size: $font-size-xxxx-large;
+
+  }
 }
 
 h2{
@@ -12,11 +17,17 @@ h2{
   color: $colorText;
   line-height: 1.25;
   text-transform: $capitalize;
+  @media all and (min-width:768px) {
+  font-size: $font-size-xx-mediumlarge;
+  }
 }
 
 p {
   font-family: $fontFamilyText;
   font-weight: $fontWeightText;
-  font-size: $font-size-regular;
+  font-size: $font-size-large;
   color: $colorText;
+  @media all and (min-width:768px) {
+  font-size: $font-size-x-large;
+  }
 }

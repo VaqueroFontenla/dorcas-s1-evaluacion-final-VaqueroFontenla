@@ -30,21 +30,64 @@
   padding: 30px 0px 60px 0px;
   background-color: $colorBackgroundSectionTwo;
   justify-items: center;
+
+  @media all and (min-width:768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 .sectionTwoTitle{
   width: 290px;
   text-align: center;
+  @media all and (min-width:768px) {
+  grid-column: 1/4;
+  grid-row: 1/2;
+  display: grid;
+  justify-items: center;
+  }
 }
 
 .sectionTwoText {
   width: 184px;
   text-align: center;
   padding-bottom: 45px;
+  }
+
+  .box1 {
+  @media all and (min-width:768px) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  }
+}
+
+.box2 {
+@media all and (min-width:768px) {
+grid-column: 2/3;
+grid-row: 2/3;
+}
+}
+.box3 {
+@media all and (min-width:768px) {
+grid-column: 3/4;
+grid-row: 2/3;
+}
+}
+
+
+.sectionTwoButton{
+  @media all and (min-width:768px) {
+  grid-column: span 3;
+  grid-row: 3/4;
+  }
 }
 
 .pTitle {
   font-weight: $fontWeightTitle;
   font-size: $font-size-large;
   font-family: $fontFamilyTitle;
+  @media all and (min-width:768px) {
+  font-size: $font-size-xx-mediumlarge;
+  }
 }

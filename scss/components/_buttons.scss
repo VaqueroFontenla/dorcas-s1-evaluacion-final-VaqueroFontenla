@@ -26,6 +26,9 @@
   line-height: 45px;
   font-family: $fontFamilyText;
   font-weight: $fontWeightButton;
+  @media all and (min-width:768px) {
+  width: 91px;
+  }
 }
 
 .moreReasonsButton {
@@ -38,6 +41,9 @@
   line-height: 2.25;
   font-family: $fontFamilyText;
   font-weight: $fontWeightButton;
+  @media all and (min-width:768px) {
+  width: 210px;
+  }
 }
  .withShadow {
    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);

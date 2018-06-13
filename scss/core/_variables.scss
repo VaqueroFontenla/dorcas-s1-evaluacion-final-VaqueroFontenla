@@ -3,11 +3,34 @@
 $pathImages:'../images/';
 
 /* Colors */
-$colorTitle: #fff;
-
+$colorBackgroundSectionTwo:#eff9ff;
+$colorBackgroundFooter:#304268;
 $colorButtonHome: #0271bc;
+$colorButtomGo:#f26002;
+$colorLight: #fff;
 
 
 /* Fonts */
-$fontTitle: 'Roboto';
-$fontText: 'RobotoSlab'
+
+$font-size-small: 14px;
+$font-size-regular: 16px;
+$font-size-large: 18px;
+$font-size-x-large: 20px;
+$font-size-xx-large: 24px;
+$font-size-xxx-large: 42px;
+
+
+$fontFamilyTitle: 'RobotoSlab';
+$fontFamilyText: 'Roboto';
+
+$fontWeightTitle: 700;
+$fontWeightText: 400;
+$fontWeightButton: 500;
+
+
+$colorText: #000;
+$colorTitle: #fff;
+$colorSectionOne: #4a4a4a;
+$colorRectangle: #8ccbea;
+
+$capitalize: capitalize;

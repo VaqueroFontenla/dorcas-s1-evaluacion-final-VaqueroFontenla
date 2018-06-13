@@ -1,10 +1,22 @@
 h1{
-  font: bold 42px RobotoSlab;
-  line-height: 55px;
+  font-family: $fontFamilyTitle;
+  font-size: $font-size-xxx-large;
   color: $colorTitle;
+  line-height: 55px;
 }
 
-h3{
-  font: 16px Roboto;
-  color: $colorTitle;
+h2{
+  font-family: $fontFamilyTitle;
+  font-weight: $fontWeightTitle;
+  font-size: $font-size-xx-large;
+  color: $colorText;
+  line-height: 1.25;
+  text-transform: $capitalize;
+}
+
+p {
+  font-family: $fontFamilyText;
+  font-weight: $fontWeightText;
+  font-size: $font-size-regular;
+  color: $colorText;
 }

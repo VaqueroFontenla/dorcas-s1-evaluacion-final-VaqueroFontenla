@@ -12,4 +12,36 @@
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
+  background-color: $colorLight;
 }
+
+.buttonGo{
+  width: 76px;
+  height: 45px;
+  border-radius: 22.5px;
+  border: 2px solid $colorButtomGo;
+  color: $colorButtomGo;
+  background-color: $colorLight;
+  font-size: $font-size-x-large;
+  line-height: 45px;
+  font-family: $fontFamilyText;
+  font-weight: $fontWeightButton;
+}
+
+.moreReasonsButton {
+  width: 184px;
+  height: 45px;
+  border-radius: 22.5px;
+  background-color: $colorButtomGo;
+  color: $colorLight;
+  font-size: $font-size-x-large;
+  line-height: 2.25;
+  font-family: $fontFamilyText;
+  font-weight: $fontWeightButton;
+}
+ .withShadow {
+   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+   transform: translateY(-50%);
+   z-index: 5;
+
+ }

@@ -4,6 +4,9 @@
  justify-content: flex-start;
  padding: 30px 15px 45px 15px;
  background-color: $colorLight;
+ @media all and (min-width:768px) {
+    padding: 30px 39px 60px 39px;
+ }
  @media all and (min-width:1280px) {
     justify-content: center;
  }
@@ -16,17 +19,35 @@
   line-height: 2.14;
   color: $colorRectangle;
   font-size: $font-size-small;
+  @media all and (min-width:768px) {
+     width: 216px;
+  }
 }
 
-.titleSectionOne{
+.titleSectionOne {
   width: 290px;
+  height: 60px;
   line-height: 1.25;
   margin-bottom: 15px;
+  @media all and (min-width:768px) {
+     width: 690px;
+     height: 45px;
+     line-height: 1.73;
+     margin-bottom: 30px;
+  }
 }
-.pSectionOne{
+
+.pSectionOne {
+  width: 290px;
   margin-bottom: 30px;
   line-height: 1.67;
   color: $colorSectionOne;
+  @media all and (min-width:768px) {
+     width: 690px;
+     font-size: $font-size-large;
+     line-height: 30px;
+
+  }
 }
 
 .sectionTwo {
@@ -38,29 +59,42 @@
   justify-items: center;
 
   @media all and (min-width:768px) {
+    padding: 30px 40px 60px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 45px 1fr 45px;
   }
 }
 
 .sectionTwoTitle{
   width: 290px;
+  height: 30px;
   text-align: center;
-  line-height: 1.25;
   @media all and (min-width:768px) {
-  grid-column: 1/4;
-  grid-row: 1/2;
-  display: grid;
-  justify-items: center;
+    width: 450px;
+    height: 30px;
+    line-height: 45px;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    display: grid;
+    justify-items: center;
   }
 }
 
+.titleSectionTwo{
+  line-height: 30px;
+   @media all and (min-width:768px) {
+      line-height: 45px;
+    }
+}
+
 .sectionTwoText {
-  width: 184px;
   text-align: center;
   padding-top: 45px;
+  @media all and (min-width:768px) {
+  margin-bottom: 60px;
   }
+}
 
   .box1 {
   @media all and (min-width:768px) {
@@ -99,7 +133,8 @@ grid-row: 2/3;
   line-height: 1.67;
   text-align: center;
   @media all and (min-width:768px) {
-  font-size: $font-size-xx-mediumlarge;
+    width: 210px;
+    font-size: $font-size-xx-mediumlarge;
   }
 }
 

@@ -31,11 +31,13 @@
 
 .titleSectionOne {
   width: 290px;
+  height: 60px;
   line-height: 1.25;
   margin-bottom: 15px;
 }
 
 .pSectionOne {
+  width: 290px;
   margin-bottom: 30px;
   line-height: 1.67;
   color: #4a4a4a;
@@ -52,12 +54,15 @@
 
 .sectionTwoTitle {
   width: 290px;
+  height: 30px;
   text-align: center;
-  line-height: 1.25;
+}
+
+.titleSectionTwo {
+  line-height: 30px;
 }
 
 .sectionTwoText {
-  width: 184px;
   text-align: center;
   padding-top: 45px;
 }
@@ -97,22 +102,24 @@
 .pFooter {
   color: #fff;
   font-size: 14px;
-  line-height: 2.14;
   text-align: center;
 }
 
 .copyright {
   width: 77px;
   height: 30px;
+  line-height: 30px;
 }
 
 .love {
   width: 290px;
   height: 30px;
+  line-height: 30px;
 }
 
 .hearth {
   color: #f26002;
+  line-height: 30px;
 }
 
 .buttonHome {
@@ -258,17 +265,50 @@ p {
 }
 
 @media all and (min-width: 768px) {
+  .sectionOne {
+    padding: 30px 39px 60px 39px;
+  }
+
+  .rectangle {
+    width: 216px;
+  }
+
+  .titleSectionOne {
+    width: 690px;
+    height: 45px;
+    line-height: 1.73;
+    margin-bottom: 30px;
+  }
+
+  .pSectionOne {
+    width: 690px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .sectionTwo {
+    padding: 30px 40px 60px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 45px 1fr 45px;
   }
 
   .sectionTwoTitle {
+    width: 450px;
+    height: 30px;
+    line-height: 45px;
     grid-column: 1/4;
     grid-row: 1/2;
     display: grid;
     justify-items: center;
+  }
+
+  .titleSectionTwo {
+    line-height: 45px;
+  }
+
+  .sectionTwoText {
+    margin-bottom: 60px;
   }
 
   .box1 {
@@ -292,7 +332,16 @@ p {
   }
 
   .pTitle {
+    width: 210px;
     font-size: 26px;
+  }
+
+  .copyright {
+    width: 185px;
+  }
+
+  .love {
+    width: 696px;
   }
 
   .buttonGo {
@@ -301,17 +350,21 @@ p {
 
   .moreReasonsButton {
     width: 210px;
+    line-height: 45px;
+    margin-bottom: 60px;
   }
 
   .titulo {
     width: 690px;
     height: 212px;
+    margin-bottom: 20px;
   }
 
   .subtitulo {
     width: 360px;
     height: 32px;
     font-size: 24px;
+    margin-bottom: 30px;
   }
 
   h1 {

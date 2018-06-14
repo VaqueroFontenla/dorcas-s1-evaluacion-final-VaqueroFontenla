@@ -25,6 +25,7 @@
   @media all and (min-width:768px) {
     width: 690px;
     height: 212px;
+    margin-bottom: 20px;
   }
   @media all and (min-width:1280px) {
     width: 730px;
@@ -42,6 +43,7 @@
     width: 360px;
     height: 32px;
     font-size: $font-size-xx-large;
+    margin-bottom: 30px;
     @media all and (min-width:1280px) {
       width: 730px;
     }

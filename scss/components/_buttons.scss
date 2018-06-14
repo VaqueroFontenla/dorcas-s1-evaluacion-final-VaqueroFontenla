@@ -86,18 +86,25 @@
 }
 
 @keyframes grow-up {
-  from {
+  0% {
     transform: rotate(0deg) translateY(-50%);
+    background-color: $colorLight;
   }
 
-  to {
-    transform: rotate(360deg) translateY(-50%);
+  50% {
+    transform: rotate(180deg) translateY(-50%);
+    background-color: $colorHover;
   }
+  100% {
+    transform: rotate(360deg) translateY(-50%);
+    background-color: $colorLight;
+  }
+
 }
 
 .animation {
   animation-name: grow-up;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease;
+  animation-timing-function: linear;
 }

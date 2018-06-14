@@ -220,12 +220,12 @@
 .animation {
   -webkit-animation-name: grow-up;
   animation-name: grow-up;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease;
-  animation-timing-function: ease;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
 }
 
 .hero {
@@ -479,26 +479,42 @@ p {
 }
 
 @-webkit-keyframes grow-up {
-  from {
+  0% {
     -webkit-transform: rotate(0deg) translateY(-50%);
     transform: rotate(0deg) translateY(-50%);
+    background-color: #fff;
   }
 
-  to {
+  50% {
+    -webkit-transform: rotate(180deg) translateY(-50%);
+    transform: rotate(180deg) translateY(-50%);
+    background-color: #8ccbea;
+  }
+
+  100% {
     -webkit-transform: rotate(360deg) translateY(-50%);
     transform: rotate(360deg) translateY(-50%);
+    background-color: #fff;
   }
 }
 
 @keyframes grow-up {
-  from {
+  0% {
     -webkit-transform: rotate(0deg) translateY(-50%);
     transform: rotate(0deg) translateY(-50%);
+    background-color: #fff;
   }
 
-  to {
+  50% {
+    -webkit-transform: rotate(180deg) translateY(-50%);
+    transform: rotate(180deg) translateY(-50%);
+    background-color: #8ccbea;
+  }
+
+  100% {
     -webkit-transform: rotate(360deg) translateY(-50%);
     transform: rotate(360deg) translateY(-50%);
+    background-color: #fff;
   }
 }
 

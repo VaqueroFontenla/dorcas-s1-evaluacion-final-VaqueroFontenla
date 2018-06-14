@@ -126,6 +126,7 @@
 }
 
 .button {
+  display: block;
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
@@ -142,6 +143,7 @@
 }
 
 .buttonGo {
+  display: block;
   width: 76px;
   height: 45px;
   border-radius: 22.5px;
@@ -176,6 +178,7 @@
 }
 
 .moreReasonsButton {
+  display: block;
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
@@ -211,11 +214,14 @@
 .withShadow {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
   z-index: 5;
+}
+
+.animation {
   -webkit-animation-name: grow-up;
   animation-name: grow-up;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease;
@@ -474,25 +480,25 @@ p {
 
 @-webkit-keyframes grow-up {
   from {
-    -webkit-transform: scale(3);
-    transform: scale(3);
+    -webkit-transform: rotate(0deg) translateY(-50%);
+    transform: rotate(0deg) translateY(-50%);
   }
 
   to {
-    -webkit-transform: rotate(1);
-    transform: rotate(1);
+    -webkit-transform: rotate(360deg) translateY(-50%);
+    transform: rotate(360deg) translateY(-50%);
   }
 }
 
 @keyframes grow-up {
   from {
-    -webkit-transform: scale(3);
-    transform: scale(3);
+    -webkit-transform: rotate(0deg) translateY(-50%);
+    transform: rotate(0deg) translateY(-50%);
   }
 
   to {
-    -webkit-transform: rotate(1);
-    transform: rotate(1);
+    -webkit-transform: rotate(360deg) translateY(-50%);
+    transform: rotate(360deg) translateY(-50%);
   }
 }
 

@@ -9,6 +9,7 @@
 }
 
 .button {
+  display: block;
   width: 45px;
   height: 45px;
   border-radius: 22.5px;
@@ -18,6 +19,7 @@
 }
 
 .buttonGo {
+  display: block;
   width: 76px;
   height: 45px;
   border-radius: 22.5px;
@@ -50,6 +52,7 @@
 }
 
 .moreReasonsButton {
+  display: block;
   width: 184px;
   height: 45px;
   border-radius: 22.5px;
@@ -77,23 +80,24 @@
   }
 }
 
+.withShadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
 
 @keyframes grow-up {
   from {
-    transform: scale(3);
+    transform: rotate(0deg) translateY(-50%);
   }
 
   to {
-    transform: rotate(1);
+    transform: rotate(360deg) translateY(-50%);
   }
 }
 
-.withShadow {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  transform: translateY(-50%);
-  z-index: 5;
+.animation {
   animation-name: grow-up;
+  animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-timing-function: ease;
-
 }

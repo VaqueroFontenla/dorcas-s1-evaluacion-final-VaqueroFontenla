@@ -13,9 +13,6 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
   padding: 30px 15px 45px 15px;
   background-color: #fff;
 }
@@ -37,7 +34,6 @@
 }
 
 .pSectionOne {
-  width: 290px;
   margin-bottom: 30px;
   line-height: 1.67;
   color: #4a4a4a;
@@ -53,8 +49,6 @@
 }
 
 .sectionTwoTitle {
-  width: 290px;
-  height: 30px;
   text-align: center;
 }
 
@@ -69,7 +63,6 @@
 
 .pTitle {
   width: 184px;
-  height: 30px;
   font-weight: 700;
   font-size: 18px;
   font-family: "RobotoSlab";
@@ -281,7 +274,6 @@ p {
   }
 
   .pSectionOne {
-    width: 690px;
     font-size: 18px;
     line-height: 30px;
   }
@@ -294,8 +286,6 @@ p {
   }
 
   .sectionTwoTitle {
-    width: 450px;
-    height: 30px;
     line-height: 45px;
     grid-column: 1/4;
     grid-row: 1/2;
@@ -334,6 +324,13 @@ p {
   .pTitle {
     width: 210px;
     font-size: 26px;
+    padding-bottom: 14px;
+    line-height: 30px;
+  }
+
+  .pSectionTwo {
+    width: 212.3px;
+    font-size: 20px;
   }
 
   .copyright {
@@ -376,6 +373,10 @@ p {
     font-size: 26px;
   }
 
+  h2 {
+    font-size: 32px;
+  }
+
   p {
     font-size: 20px;
   }
@@ -389,9 +390,36 @@ p {
 
 @media all and (min-width: 1280px) {
   .sectionOne {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    padding-left: 275px;
+    padding-bottom: 60px;
+    width: 730px;
+  }
+
+  .rectangle {
+    width: 360px;
+  }
+
+  .titleSectionOne {
+    width: 730px;
+    height: 45px;
+    line-height: 1.41;
+  }
+
+  .pSectionOne {
+    width: 730px;
+  }
+
+  .pTitle {
+    width: 350px;
+  }
+
+  .pSectionTwo {
+    width: 354px;
+    font-size: 20px;
+  }
+
+  .buttonGo {
+    width: 160px;
   }
 
   .titulo {

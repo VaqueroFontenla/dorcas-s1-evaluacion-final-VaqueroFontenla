@@ -1,4 +1,5 @@
 .buttonHome {
+  border: 0;
   width: 44px;
   height: 44px;
   position: fixed;
@@ -12,6 +13,8 @@
   height: 45px;
   border-radius: 22.5px;
   background-color: $colorLight;
+
+  @include flexy;
 }
 
 .buttonGo {
@@ -25,7 +28,11 @@
   line-height: 45px;
   font-family: $fontFamilyText;
   font-weight: $fontWeightButton;
-  transition: background-color ease 2s;
+  text-decoration: none;
+  transition: background-color ease 2s, color ease 2s, box-shadow ease 2s;
+
+
+  @include flexy;
 
   &:hover {
     background-color: $colorButtomGo;
@@ -52,7 +59,10 @@
   line-height: 2.25;
   font-family: $fontFamilyText;
   font-weight: $fontWeightButton;
-  transition: background-color ease 2s;
+  text-decoration: none;
+  transition: background-color ease 2s, color ease 2s, box-shadow ease 2s;
+
+  @include flexy;
 
   &:hover {
     background-color: $colorLight;
@@ -67,14 +77,6 @@
   }
 }
 
-.withShadow {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  transform: translateY(-50%);
-  z-index: 5;
-  animation-name: grow-up;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
-}
 
 @keyframes grow-up {
   from {
@@ -84,4 +86,14 @@
   to {
     transform: rotate(1);
   }
+}
+
+.withShadow {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%);
+  z-index: 5;
+  animation-name: grow-up;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+
 }

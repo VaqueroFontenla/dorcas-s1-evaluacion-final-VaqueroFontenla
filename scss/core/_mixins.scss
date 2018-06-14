@@ -3,3 +3,9 @@
   font-stretch: normal;
   letter-spacing: normal;
 }
+
+@mixin flexy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

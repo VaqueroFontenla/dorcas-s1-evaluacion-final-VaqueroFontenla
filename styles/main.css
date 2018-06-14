@@ -1,4 +1,4 @@
-/* Colors *//* Fonts */*,body {
+/* Paths *//* Colors *//* Fonts */*,body {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -43,7 +43,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 30px 1fr 1fr 1fr 45px;
-  padding: 30px 0px 60px 0px;
+  padding: 30px 0 60px 0;
   background-color: #eff9ff;
   justify-items: center;
 }
@@ -73,7 +73,7 @@
 .pSectionTwo {
   width: 180px;
   margin: 0;
-  padding: 0px 2px;
+  padding: 0 2px;
   line-height: 1.67;
 }
 
@@ -118,10 +118,9 @@
 .buttonHome {
   width: 44px;
   height: 44px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: #0271bc;
 }
 
@@ -178,11 +177,11 @@
 .withShadow {
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  -webkit-transform: translatey(-50%);
-  transform: translatey(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 5;
-  -webkit-animation-name: intro;
-  animation-name: intro;
+  -webkit-animation-name: grow-up;
+  animation-name: grow-up;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease;
@@ -190,10 +189,11 @@
 }
 
 .hero {
-  width: 100%;
+  width: 100vw;
   min-height: 100vh;
   background-image: url("../images/cover.jpg");
   background-size: cover;
+  background-position: center;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,6 +235,9 @@
 }
 
 h1 {
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
   font-family: "RobotoSlab";
   font-size: 42px;
   color: #fff;
@@ -242,6 +245,9 @@ h1 {
 }
 
 h2 {
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
   font-family: "RobotoSlab";
   font-weight: 700;
   font-size: 24px;
@@ -373,25 +379,14 @@ p {
     font-size: 26px;
   }
 
-  h2 {
-    font-size: 32px;
-  }
-
   p {
     font-size: 20px;
   }
 }
 
-@media all and (min-width: 768px) and (min-width: 1280px) {
-  .subtitulo {
-    width: 730px;
-  }
-}
-
 @media all and (min-width: 1280px) {
   .sectionOne {
-    padding-left: 275px;
-    padding-bottom: 60px;
+    margin: 0 auto;
     width: 730px;
   }
 
@@ -427,33 +422,41 @@ p {
     height: 264px;
   }
 
+  .subtitulo {
+    width: 730px;
+  }
+
   h1 {
     line-height: 1.32;
     font-size: 100px;
   }
-}
 
-@-webkit-keyframes intro {
-  from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  to {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+  h2 {
+    font-size: 32px;
   }
 }
 
-@keyframes intro {
+@-webkit-keyframes grow-up {
   from {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    -webkit-transform: scale(3);
+    transform: scale(3);
   }
 
   to {
-    -webkit-transform: rotate(-360deg);
-    transform: rotate(-360deg);
+    -webkit-transform: rotate(1);
+    transform: rotate(1);
+  }
+}
+
+@keyframes grow-up {
+  from {
+    -webkit-transform: scale(3);
+    transform: scale(3);
+  }
+
+  to {
+    -webkit-transform: rotate(1);
+    transform: rotate(1);
   }
 }
 

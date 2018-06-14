@@ -1,39 +1,48 @@
-h1{
+h1 {
+  @include beatifulText;
+
   font-family: $fontFamilyTitle;
   font-size: $font-size-xxx-large;
   color: $colorTitle;
   line-height: 55px;
-  @media all and (min-width:768px) {
+
+  @media all and (min-width: 768px) {
     line-height: 1.33;
     font-size: $font-size-xxxx-large;
   }
-  @media all and (min-width:1280px) {
+
+  @media all and (min-width: 1280px) {
     line-height: 1.32;
     font-size: $font-size-xxxxx-large;
   }
 }
 
 h2 {
+  @include beatifulText;
+
   font-family: $fontFamilyTitle;
   font-weight: $fontWeightTitle;
   font-size: $font-size-xx-large;
   color: $colorText;
   line-height: 1.25;
   text-transform: $capitalize;
-  @media all and (min-width:768px) {
+
+  @media all and (min-width: 768px) {
     font-size: $font-size-xx-mediumlarge;
   }
-  @media all and (min-width:768px) {
+
+  @media all and (min-width: 1280px) {
     font-size: $font-size-xxx-mediumlarge;
   }
 }
 
-  p {
-    font-family: $fontFamilyText;
-    font-weight: $fontWeightText;
-    font-size: $font-size-large;
-    color: $colorText;
-    @media all and (min-width:768px) {
-      font-size: $font-size-x-large;
-    }
+p {
+  font-family: $fontFamilyText;
+  font-weight: $fontWeightText;
+  font-size: $font-size-large;
+  color: $colorText;
+
+  @media all and (min-width: 768px) {
+    font-size: $font-size-x-large;
   }
+}

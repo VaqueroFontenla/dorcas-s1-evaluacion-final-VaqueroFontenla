@@ -1,8 +1,9 @@
-.hero{
-  width: 100%;
+.hero {
+  width: 100vw;
   min-height: 100vh;
   background-image: url($pathImages + 'cover.jpg');
   background-size: cover;
+  background-position: center;
   position: relative;
   display: flex;
   justify-content: center;
@@ -22,31 +23,34 @@
   height: 110px;
   text-align: center;
   margin-bottom: 10px;
-  @media all and (min-width:768px) {
+
+  @media all and (min-width: 768px) {
     width: 690px;
     height: 212px;
     margin-bottom: 20px;
   }
-  @media all and (min-width:1280px) {
+
+  @media all and (min-width: 1280px) {
     width: 730px;
     height: 264px;
   }
 }
 
-.subtitulo{
+.subtitulo {
   width: 290px;
   height: 21px;
   margin-bottom: 45px;
   color: $colorTitle;
   font-size: $font-size-regular;
-  @media all and (min-width:768px) {
+
+  @media all and (min-width: 768px) {
     width: 360px;
     height: 32px;
     font-size: $font-size-xx-large;
     margin-bottom: 30px;
-    @media all and (min-width:1280px) {
-      width: 730px;
+  }
 
-    }
+  @media all and (min-width: 1280px) {
+    width: 730px;
   }
 }

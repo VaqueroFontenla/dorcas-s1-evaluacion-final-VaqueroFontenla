@@ -40,6 +40,7 @@
 }
 
 .sectionTwo {
+  list-style: none;
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: 30px 1fr 1fr 1fr 90px;

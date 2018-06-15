@@ -5,6 +5,24 @@
   box-sizing: border-box;
 }
 
+.nasiba {
+  background-color: #f26002;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.date {
+  color: #fff;
+}
+
 .sectionOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,6 +327,10 @@ p {
 }
 
 @media all and (min-width: 768px) {
+  .nasiba {
+    background-color: #0271bc;
+  }
+
   .sectionOne {
     padding: 30px 39px 60px 39px;
   }
